@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calendar Download Demo</title>
+    <link rel="stylesheet" media="all" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Calendar Download Demo</h1>
+      <p>For each event, JS converts data fields into a downloadable .ics file for Microsoft Office or Apple iCal, and generates a URL for adding the event to a Google Calendar.</p>
+      <div id="events">
+
+        <div class="event"
+            data-title="Pizza-Eating Contest"
+            data-start="20300101T150000Z"
+            data-end="20300101T230000Z"
+            data-address="2916 Atwood Ave, Madison, WI 53704"
+            data-description="An all-you-can-eat pizza-eating extravaganza for cheese lovers of all ages.">
+          <h2>Pizza-Eating Contest</h2>
+          <p>Jan 1, 2030</p>
+          <p>2916 Atwood Ave<br /> Madison, WI 53704</p>
+          <hr />
+          <a href="" download="invite.ics" class="ics"><button>Office / iCal</button></a>
+          <a href="" target="_blank" class="google"><button>Google</button></a>
+        </div>
+
+        <div class="event"
+            data-title="Paint Party"
+            data-start="20350406T050000Z"
+            data-end="20350411T045959Z"
+            data-address="1616 N Wells St, Chicago, IL 60614"
+            data-description="Join us in repainting this classic Chicago landmark all SORTS of colors!">
+          <h2>Paint Party</h2>
+          <p>Apr 6, 2035 - Apr 10, 2035</p>
+          <p>1616 N Wells St<br /> Chicago, IL 60614</p>
+          <hr />
+          <a href="" download="invite.ics" class="ics"><button>Office / iCal</button></a>
+          <a href="" target="_blank" class="google"><button>Google</button></a>
+        </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
